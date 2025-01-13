@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link rel="stylesheet" href="css/heroes.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <title>Remote Bootcamp Class Project - Registry</title>
+</head>
+<body style="background-color: #F2F2F2 !important;">
+
+
+    <div class="container-fluid">
+     
+        <!--Navigation-->
+        <div class="row" id="top">
+            <div class="col mx-0 px-0 border-bottom border-light">
+                <nav class="navbar navbar-expand-lg menu">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="#">
+                        <img src="images/sight-see-logo.png" width="130">
+                      </a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                          </li>
+
+                          <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="search.html">The Venue</a>
+                          </li>
+                        
+                          
+                        </ul>
+                      </div>
+                      <div>
+                        <ul class="navbar-nav">
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Create Account</a>
+                          </li>
+
+                          <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="search.html">Login</a>
+                          </li> 
+                        </ul>
+                      
+                      </div>
+                      
+                      <div class="dropdown user-menu">
+                        <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <img src="images/guide-1.jpg" width="30" style="border-radius: 50%;"> Hi Ebunoluwa
+                        </a>
+                      
+                        <ul class="dropdown-menu user-profile" style="border-radius: 0px;background-color: #13357B;">
+                          <li><a class="dropdown-item" href="center_dashboard.html">Profile</a></li>
+                          <li><a class="dropdown-item" href="center_dashboard.html">Change Password</a></li>
+                          <li><a class="dropdown-item" href="#">Logout</a></li>
+                        </ul>
+                      </div>
+
+                      <div style="width:3%"></div>
+
+                    </div>
+                </nav>
+
+
+                <!--Logged in Link-->
+                
+                <!-- End Logged in link-->
+            </div>
+        </div>
+        <!--end navigation-->
+
+
+
+    <!-- For the Venue-->
+     
+  <div class="row py-2 my-3">
+    <div class="col-md-8 offset-md-2">
+        <h3 class="text-center my-3 heading-title">Celebration Fabric</h3>
+     
+       
+        <div class="row"> 
+            <div class="col-md-7">
+               <img src="images/t-shirt.png" class="img-fluid">
+            </div>
+            <div class="col-md-5 pt-5">
+                <p>Description of the Uniform will be here</p>
+
+                <p>NGN 35,000</p>
+                <form>
+                   <div class="mb-3">
+                    <select class="form-select noround border-dark">
+                        <option value="">Choose Size</option>
+                        <option value="">Small</option>
+                        <option value="">Large</option>
+                        <option value="">Extra Large</option>
+                    </select>
+                   </div>
+                   <div class="mb-3">
+                    <button class="btn btn-lg custom-btn noround">Make Payment</button>
+                   </div>
+                </form>
+                
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End the venue-->
+  
+ 
+
+ 
+<div class="row bg-dark text-white" >
+  <div class="col">
+    <p class="text-center my-3"> &copy; 2025 Moat Academy Remote Bootcamp Class Project</p>
+  </div>
+</div>
+
+      </div>
+      <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.7.1.min.js"></script>
+      <script>
+        $(document).ready(function(){
+          $(window).scroll(function(){
+            if($(window).scrollTop()>0){
+              $("nav").css("background-color","rgba(19,53,123,0.4)");
+              $('.user-menu').css("background-color","transparent");
+            }else{
+             $("nav").css("background-color","#13357B");
+            }
+          })
+
+
+        });
+      </script>
+</body>
+</html>
